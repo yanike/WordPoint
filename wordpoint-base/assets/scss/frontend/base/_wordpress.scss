@@ -1,0 +1,79 @@
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+// Media alignment
+.alignnone {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+.aligncenter {
+	display: block;
+	height: auto;
+
+	@include -zf-breakpoint-value(auto, $grid-padding-gutters) {
+		margin: ( rem-calc($-zf-bp-value) / 2 ) auto;
+	}
+}
+
+.alignleft,
+.alignright {
+	height: auto;
+	@include -zf-breakpoint-value(auto, $grid-padding-gutters) {
+		margin-bottom: ( rem-calc($-zf-bp-value) / 2 );
+	}
+}
+
+@include breakpoint(medium) {
+
+	.alignleft {
+		float: left;
+
+		@include -zf-breakpoint-value(medium, $grid-padding-gutters) {
+			margin-right: ( rem-calc($-zf-bp-value) / 2 );
+		}
+	}
+
+	.alignright {
+		float: right;
+
+		@include -zf-breakpoint-value( medium, $grid-padding-gutters ) {
+			margin-left: ( rem-calc($-zf-bp-value) / 2 );
+		}
+	}
+}
+
+// Captions
+.wp-caption {
+	//border: 1px solid #f0f0f0;
+	//max-width: 96%; // Image does not overflow the content area
+	//padding: 5px 3px 10px;
+	//text-align: center;
+
+	img {
+		//border: 0 none;
+		//height: auto;
+		//margin: 0;
+		//max-width: 98.5%;
+		//padding: 0;
+		//width: auto;
+	}
+
+	&-text {
+		font-size: 12px;
+		font-weight: 400;
+		font-style: italic;
+		//line-height: 17px;
+		//margin: 0;
+		padding: 2px 6px 4px;
+	}
+}
+
+// Text meant only for screen readers
+.screen-reader-text {
+	@extend .show-on-focus;
+}

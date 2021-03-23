@@ -1,0 +1,27 @@
+{
+  "ignoreFiles": [
+    "**/*.md",
+    "**/*.xml",
+    "**/*.js"
+  ],
+  "extends": [
+    "stylelint-config-wordpress",
+    "stylelint-config-wordpress/scss"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-same-name"
+        ],
+        "ignore": [
+          "after-comment",
+          "blockless-after-blockless",
+          "first-nested",
+          "inside-block"
+        ]
+      }
+    ]
+  }
+}

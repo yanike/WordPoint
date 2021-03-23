@@ -1,0 +1,16 @@
+// Colors
+$foundation-palette: (
+	primary: #7db4a3,
+	secondary: #edac2c,
+	tertiary: #0b5770,
+	success: #109045,
+	warning: #edac2c,
+	alert: #dc5c3a,
+);
+$tertiary-color: map-get($foundation-palette, tertiary);
+$black: #2c2c2c;
+
+// Fonts and text styles
+$mono: consolas, "Liberation Mono", courier, monospace;
+$sans: "Open Sans", "Helvetica Neue", helvetica, "Roboto", arial, sans-serif;
+$bold: 700;

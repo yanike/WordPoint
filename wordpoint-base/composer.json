@@ -1,0 +1,22 @@
+{
+	"name" : "WORDPOINT/wordpoint-base",
+	"type" : "wordpress-theme",
+	"authors" : [{
+			"name" : "Yanike Mann",
+			"email" : "support@yurjo.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.1",
+		"tgmpa/tgm-plugin-activation" : "^2.6"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"WORDPOINT_Base\\" : "inc/classes/"
+		}
+	},
+	"require-dev" : {
+		"10up/wp_mock" : "dev-dev",
+		"kint-php/kint" : "^2.2"
+	}
+}
